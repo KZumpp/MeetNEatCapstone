@@ -1,0 +1,123 @@
+h1 {
+  font-family: var(--header-font);
+  color: var(--header-text-color);
+  animation: var(--animation);
+  text-shadow: var(--shadow);
+}
+
+body {
+  background-color: var(--background);
+
+}
+
+.navbar {
+  background-image: var(--image);
+  border: var(--search-border);
+  border-radius: .5rem;
+  padding: 0.4em;
+  box-shadow: var(--box-shadow);
+  
+
+}
+
+p, h3, h4 {
+  font-family: var(--body-text);
+  color: var(--body-text-color);
+  text-shadow: var(--shadow-2);
+}
+
+.drop-down {
+  font-family: var(--body-text);
+  color: var(--menu-color);
+}
+
+.drop-down .nav-link {
+  font-family: var(--body-text);
+  color: var(--menu-color);
+}
+
+.search-bar {
+  margin-top: 25px;
+  border-radius: 5px;
+  background-color: var(--search);
+  border: var(--search-border);
+  box-shadow: var(--box-shadow);
+}
+
+.card {
+  border: var(--search-border);
+  border-radius: .5rem;
+  padding: 0.4em;
+  box-shadow: var(--box-shadow);
+}
+
+.theme-dark {
+  --header-text-color: #95D700;
+  --header-font: 'Fredoka One', cursive;
+  --animation: flicker 1.5s infinite alternate; 
+  --shadow:  
+  0 0 10px #fff,
+  0 0 15px #fff,
+  0 0 25px #fff,
+  0 0 22px #fff,
+  0 0 32px #A6EF00,
+  0 0 52px #A6EF00,
+  0 0 82px #A6EF00,
+  0 0 100px #A6EF00;
+  --body-text: 'Quicksand', sans-serif;;
+  --body-text-color: #00FFEA;
+  --shadow-2: 
+  0 0 10px #fff,
+  0 0 15px #fff,
+  0 0 32px  #00FFEA,
+  0 0 52px  #00FFEA;
+  --background: #000000;
+  --menu-color: #ff86fb;
+  --search: white;
+  --search-border: 0.2rem solid #ff86fb;
+  --image: url(wall.jpg);
+  --box-shadow: 
+  0 0 .2rem #fff,
+  0 0 .2rem #fff,
+  0 0 2rem #bc13fe,
+  0 0 0.8rem #bc13fe,
+  0 0 2.8rem #bc13fe,
+  inset 0 0 1.3rem #bc13fe;
+  
+  }
+  
+  .theme-light {
+    --header-text-color:#F44336;;
+    --header-font: 'Fredoka One', cursive;
+    --nav: var(--light-header);
+    --animation: none;
+    --shadow: none;
+    --body-text: 'Quicksand', sans-serif;;
+    --body-text-color: #0F5589;
+    --shadow-2: none;
+    --background:#f7dada;
+    --menu-color: #f17632;
+    --search: white;
+    --search-border: none;
+    --image: none;
+    --box-shadow: none;
+    
+  
+  }
+
+    @keyframes flicker {
+      0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow:
+      0 0 10px #fff,
+      0 0 15px #fff,
+      0 0 25px #fff,
+      0 0 22px #fff,
+      0 0 32px #A6EF00,
+      0 0 52px #A6EF00,
+      0 0 82px #A6EF00,
+      0 0 100px #A6EF00;
+      }
+      20%, 24%, 55% {       
+        text-shadow: none;
+      }
+  }
